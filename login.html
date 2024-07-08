@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="src/output.css" rel="stylesheet">
+    <style>
+       
+        .backdrop-filter {
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="bg-yacht  bg-cover bg-center h-screen flex items-center justify-center  bg-opacity-20 backdrop-filter">
+    <div class="bg-white shadow-md rounded-lg flex max-w-4xl  ">
+        <!-- Left Side (Form) -->
+        <div class="w-full lg:w-1/2 p-8">
+            <h2 class="text-3xl font-bold mb-4">Holla, Welcome Back</h2>
+            <p class="text-gray-600 mb-8">Hey, welcome back to your special place</p>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="stanley@gmail.com">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                </div>
+                <div class="flex items-center justify-between mb-4">
+                    <label class="flex items-center">
+                        <input class="mr-2 leading-tight" type="checkbox">
+                        <span class="text-sm">Remember me</span>
+                    </label>
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-800 hover:text-blue-600" href="#">
+                        Forgot Password?
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <button class="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Sign In
+                    </button>
+                </div>
+                <p class="text-sm text-gray-600">Don't have an account? <a class="text-blue-800 hover:text-blue-600" href="#">Sign Up</a></p>
+            </form>
+        </div>
+        <!-- Right Side (Image Placeholder) -->
+        <div class="hidden lg:block lg:w-1/2 bg-purple-100 rounded-lg">
+            <img src="./images/login2.png" alt="Image" class="w-full h-full object-cover rounded-r-lg">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

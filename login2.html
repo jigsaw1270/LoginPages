@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .bg-stripes {
+      background-image: linear-gradient(135deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);
+      background-size: 180px 180px;
+    }
+    .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  </style>
+</head>
+
+<body class="bg-stripes min-h-screen flex items-center justify-center poppins-regular">
+    <div class="flex w-full h-full">
+      <!-- Image Section -->
+      <div class="bg-stripes w-1/2 h-full"></div>
+      <!-- Login Section -->
+      <div class="w-1/2 flex items-center justify-center bg-slate-50 min-h-screen">
+        <div class="w-full max-w-md p-8">
+          <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold">BLUEBNC</h1>
+            <p class="text-lg mt-2">Welcome back!</p>
+          </div>
+          <form>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+              <input type="email" id="email" placeholder="name@email.com"
+                class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+              <input type="password" id="password" placeholder="Password"
+                class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required>
+            </div>
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <label class="block text-gray-700 text-sm">
+                  <input type="checkbox" class="mr-2 leading-tight"> Remember me
+                </label>
+              </div>
+              <div>
+                <a href="#" class="text-sm text-gray-700 hover:underline">Reset password</a>
+              </div>
+            </div>
+            <div class=" items-center justify-between">
+              <button
+                class="bg-gray-900 hover:bg-gray-400  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                type="button">Sign in</button>
+                <button class="w-full bg-white border border-gray-300 text-gray-700 py-2 my-2 rounded-lg flex items-center justify-center hover:bg-gray-100 transition duration-300 mb-4">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google Logo" class="w-6 h-6 mr-2">
+                    Sign in with Google
+                </button>
+                <button class="w-full bg-white border border-gray-300 text-gray-700 py-2 my-2 rounded-lg flex items-center justify-center hover:bg-gray-100 transition duration-300 mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Google Logo" class="w-6 h-6 mr-2">
+                    Sign in with Twitter
+                </button>
+            </div>
+            <div class="text-center mt-4">
+              <p class="text-sm">Don't have an account? <a href="#" class="text-gray-700 hover:underline">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
